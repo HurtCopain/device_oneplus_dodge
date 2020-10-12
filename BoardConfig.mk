@@ -118,6 +118,9 @@ TARGET_USERIMAGES_USE_F2FS := true
 # Security patch level
 VENDOR_SECURITY_PATCH := 2025-01-01
 
+# SEPolicy
+include device/qcom/sepolicy/SEPolicy.mk
+
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3
