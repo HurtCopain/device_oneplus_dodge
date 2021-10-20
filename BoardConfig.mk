@@ -4,6 +4,7 @@
 #
 
 DEVICE_PATH := device/oneplus/dodge
+DODGE_PREBUILT := device/oneplus/dodge-prebuilts
 
 # A/B
 AB_OTA_UPDATER := true
@@ -109,6 +110,9 @@ TARGET_COPY_OUT_SYSTEM_DLKM := system_dlkm
 TARGET_COPY_OUT_SYSTEM_EXT := system_ext
 TARGET_COPY_OUT_VENDOR := vendor
 TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
+
+# Partitions - prebuilt
+BOARD_PREBUILT_ODMIMAGE := $(DODGE_PREBUILT)/images/odm.img
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
