@@ -140,6 +140,7 @@ TARGET_COPY_OUT_VENDOR_DLKM := vendor_dlkm
 # Partitions - prebuilt
 BOARD_PREBUILT_ODMIMAGE := $(DODGE_PREBUILT)/images/odm.img
 BOARD_PREBUILT_VENDORIMAGE := $(DODGE_PREBUILT)/images/vendor.img
+BUILD_WITHOUT_VENDOR := true
 
 # Platform
 BOARD_USES_QCOM_HARDWARE := true
