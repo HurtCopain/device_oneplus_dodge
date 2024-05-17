@@ -1,5 +1,5 @@
-system                                                    /system                        ext4      ro,barrier=1,discard          wait,slotselect,avb=vbmeta_system,logical,first_stage_mount,avb_keys=/avb/q-gsi.avbpubkey:/avb/r-gsi.avbpubkey:/avb/s-gsi.avbpubkey
-system                                                    /system                        erofs     ro            wait,slotselect,avb=vbmeta_system,logical,first_stage_mount,avb_keys=/avb/q-gsi.avbpubkey:/avb/r-gsi.avbpubkey:/avb/s-gsi.avbpubkey
+system                                                    /system                        ext4      ro,barrier=1,discard          wait,slotselect,avb=vbmeta_system,logical,first_stage_mount
+system                                                    /system                        erofs     ro            wait,slotselect,avb=vbmeta_system,logical,first_stage_mount
 system_ext                                                /system_ext                    ext4      ro,barrier=1,discard          wait,slotselect,avb=vbmeta_system,logical,first_stage_mount
 system_ext                                                /system_ext                    erofs     ro            wait,slotselect,avb=vbmeta_system,logical,first_stage_mount
 product                                                   /product                       ext4      ro,barrier=1,discard          wait,slotselect,avb=vbmeta_system,logical,first_stage_mount
@@ -8,8 +8,8 @@ vendor                                                    /vendor               
 vendor                                                    /vendor                        erofs     ro            wait,slotselect,avb=vbmeta_vendor,logical,first_stage_mount
 vendor_dlkm                                               /vendor_dlkm                   ext4      ro,barrier=1,discard          wait,slotselect,avb=vbmeta,logical,first_stage_mount
 vendor_dlkm                                               /vendor_dlkm                   erofs     ro            wait,slotselect,avb=vbmeta,logical,first_stage_mount
-system_dlkm                                               /system_dlkm                   ext4      ro,barrier=1,discard          wait,slotselect,avb=vbmeta,logical,first_stage_mount,avb_keys=/avb/q-gsi.avbpubkey:/avb/r-gsi.avbpubkey:/avb/s-gsi.avbpubkey
-system_dlkm                                               /system_dlkm                   erofs     ro            wait,slotselect,avb=vbmeta,logical,first_stage_mount,avb_keys=/avb/q-gsi.avbpubkey:/avb/r-gsi.avbpubkey:/avb/s-gsi.avbpubkey
+system_dlkm                                               /system_dlkm                   ext4      ro,barrier=1,discard          wait,slotselect,avb=vbmeta,logical,first_stage_mount
+system_dlkm                                               /system_dlkm                   erofs     ro            wait,slotselect,avb=vbmeta,logical,first_stage_mount
 odm                                                       /odm                           ext4      ro,barrier=1,discard          wait,slotselect,logical,first_stage_mount,avb_keys=/vendor/etc/oplus_avb.pubkey
 odm                                                       /odm                           erofs     ro            wait,slotselect,logical,first_stage_mount,avb_keys=/vendor/etc/oplus_avb.pubkey
 /dev/block/by-name/boot                                   /boot                          emmc      defaults            slotselect,avb=vbmeta,first_stage_mount
