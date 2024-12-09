@@ -78,11 +78,13 @@ BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_IMAGE_NAME := Image
 
-TARGET_KERNEL_SOURCE := kernel/oneplus/dodge
-TARGET_KERNEL_CONFIG := \
-    gki_defconfig \
-    vendor/sun_perf.config \
-    vendor/sun_consolidate.config
+TARGET_NO_KERNEL_OVERRIDE := true
+
+TARGET_KERNEL_SOURCE := $(DODGE_PREBUILT)/kernel-headers
+BOARD_PREBUILT_DTBIMAGE_DIR := $(DODGE_PREBUILT)/kernel/
+BOARD_PREBUILT_DTBOIMAGE := $(DODGE_PREBUILT)/kernel/dtbo.img
+PRODUCT_COPY_FILES += \
+    $(DODGE_PREBUILT)/kernel/Image:kernel
 
 PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/init/etc/fstab.qcom:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.qcom
