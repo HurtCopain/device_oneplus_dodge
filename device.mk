@@ -104,3 +104,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
+
+# Inherit from the proprietary files makefile.
+$(call inherit-product, vendor/oneplus/dodge/dodge-vendor.mk)
