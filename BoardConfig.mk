@@ -5,18 +5,18 @@
 #
 
 # Include the common OEM chipset BoardConfig.
-include device/oneplus/sm8650-common/BoardConfigCommon.mk
+include device/oneplus/sm8750-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/oneplus/waffle
+DEVICE_PATH := device/oneplus/dodge
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := OP5929L1,OP595DL1
+TARGET_OTA_ASSERT_DEVICE := OP5D55L1,OP5D55L1
 
 # Display
 TARGET_SCREEN_DENSITY := 640
 
 # Kernel
-TARGET_KERNEL_CONFIG += vendor/oplus/waffle.config
+TARGET_KERNEL_CONFIG += vendor/oplus/dodge.config
 
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
@@ -25,4 +25,4 @@ TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
 TARGET_RECOVERY_UI_MARGIN_HEIGHT := 103
 
 # Include the proprietary files BoardConfig.
-include vendor/oneplus/waffle/BoardConfigVendor.mk
+include vendor/oneplus/dodge/BoardConfigVendor.mk
