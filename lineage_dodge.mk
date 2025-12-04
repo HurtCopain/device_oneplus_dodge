@@ -14,6 +14,18 @@ $(call inherit-product, device/oneplus/dodge/device.mk)
 # Inherit some common Lineage stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+$(call inherit-product, vendor/extras/bcr/bcr.mk)
+
+TARGET_OPTIMIZED_DEXOPT := true
+
+TARGET_INCLUDE_PHOTOS := true
+TARGET_CUSTOM_UDFPS := true
+TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_INCLUDE_WEATHER := true
+TARGET_SUPPORTS_GOOGLE_FILES := true
+
 PRODUCT_NAME := lineage_dodge
 PRODUCT_DEVICE := dodge
 PRODUCT_MANUFACTURER := OnePlus
