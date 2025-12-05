@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: 2022 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+<!-- Hide AOSP backup because we are using GMS/Vendor backup -->
+<bool name="config_backup_settings_intent">false</bool>
+<bool name="config_backup_settings_label">false</bool>
+</resources>
+
