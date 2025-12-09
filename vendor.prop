@@ -6,3 +6,6 @@ ro.product.marketname=OnePlus 13
 
 # USB
 vendor.usb.product_string=OnePlus 13
+
+persist.sys.perf.scroll_opt=true
+persist.sys.perf.scroll_opt.heavy_app=2
